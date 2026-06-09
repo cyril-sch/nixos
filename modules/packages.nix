@@ -15,25 +15,15 @@
     wl-clipboard
     mangohud
     faugus-launcher
+    stow
     # Polices
     nerd-fonts.fira-code
     nerd-fonts.caskaydia-cove
   ];
 
-  programs.zsh.enable = true;
-
   programs.firefox = {
     enable = true;
     languagePacks = [ "fr" ];
-  };
-
-  programs.vscode = {
-    enable = true;
-    extensions = with pkgs.vscode-extensions; [
-      enkia.tokyo-night
-      bbenoist.nix
-      ms-ceintl.vscode-language-pack-fr
-    ];
   };
 
   programs.steam = {
