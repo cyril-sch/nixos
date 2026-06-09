@@ -46,13 +46,15 @@
 
   services.printing.enable = true;
   services.openssh.enable = true;
+  services.flatpak.enable = true;
+  fonts.fontDir.enable = true;
 
   # ============================================================
   # SPECIALISATION — FALLBACK (kernel vanilla)
   # ============================================================
 
   # specialisation.fallback.configuration = {
-    # boot.kernelPackages = lib.mkForce pkgs.linuxPackages;
+  # boot.kernelPackages = lib.mkForce pkgs.linuxPackages;
   # };
 
   # ============================================================

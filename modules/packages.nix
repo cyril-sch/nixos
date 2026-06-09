@@ -14,6 +14,7 @@
     wayland-utils
     wl-clipboard
     mangohud
+    faugus-launcher
     # Polices
     nerd-fonts.fira-code
     nerd-fonts.caskaydia-cove
