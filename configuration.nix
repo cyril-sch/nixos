@@ -51,9 +51,9 @@
   # SPECIALISATION — FALLBACK (kernel vanilla)
   # ============================================================
 
-  specialisation.fallback.configuration = {
-    boot.kernelPackages = lib.mkForce pkgs.linuxPackages;
-  };
+  # specialisation.fallback.configuration = {
+    # boot.kernelPackages = lib.mkForce pkgs.linuxPackages;
+  # };
 
   # ============================================================
 
