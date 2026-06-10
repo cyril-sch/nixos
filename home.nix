@@ -20,11 +20,6 @@
 
   programs.ghostty = {
     enable = true;
-    settings = {
-      font-family = "CaskaydiaCove Nerd Font";
-      font-size = 12;
-      theme = "TokyoNight Storm";
-    };
   };
 
   # ============================================================
@@ -40,14 +35,6 @@
         enkia.tokyo-night
         ms-ceintl.vscode-language-pack-fr
       ];
-      userSettings = {
-        "locale" = "fr";
-        "workbench.colorTheme" = "Tokyo Night Storm";
-        "editor.fontFamily" = "'FiraCode Nerd Font', monospace";
-        "editor.fontSize" = 14;
-        "editor.formatOnSave" = true;
-        "editor.fontLigatures" = true;
-      };
     };
   };
 
@@ -63,6 +50,15 @@
         email = "cyril.m.schmitt@protonmail.com";
       };
     };
+  };
+
+  # ============================================================
+  # STARSHIP
+  # ============================================================
+
+  programs.starship = {
+    enable = true;
+    enableBashIntegration = true;
   };
 
   # ============================================================

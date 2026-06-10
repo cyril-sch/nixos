@@ -16,6 +16,7 @@
     mangohud
     faugus-launcher
     stow
+    proton-vpn
     # Polices
     nerd-fonts.fira-code
     nerd-fonts.caskaydia-cove

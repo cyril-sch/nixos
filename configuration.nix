@@ -50,6 +50,17 @@
   fonts.fontDir.enable = true;
 
   # ============================================================
+  # NETTOYAGE DES GENERATIONS
+  # ============================================================
+
+  nix.gc = {
+    automatic = true;
+    dates = "daily";
+    options = "--keep-last 7";
+    persistent = true;
+  };
+
+  # ============================================================
   # SPECIALISATION — FALLBACK (kernel vanilla)
   # ============================================================
 
