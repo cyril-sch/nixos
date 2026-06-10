@@ -66,8 +66,8 @@
   # ============================================================
 
   home.shellAliases = {
-    rebuild = "sudo nixos-rebuild switch --flake /etc/nixos#QUASAR";
-    rebuild-update = "sudo nix flake update --flake /etc/nixos && sudo nixos-rebuild switch --flake /etc/nixos#QUASAR";
+    rebuild = "sudo nixos-rebuild switch --flake ~/nixos#QUASAR";
+    rebuild-update = "sudo nix flake update --flake ~/nixos && sudo nixos-rebuild switch --flake ~/nixos#QUASAR";
   };
 
   # ============================================================
