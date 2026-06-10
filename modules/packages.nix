@@ -3,7 +3,6 @@
 {
   environment.systemPackages = with pkgs; [
     kdePackages.kate
-    librewolf
     qbittorrent
     vlc
     libdvdcss
