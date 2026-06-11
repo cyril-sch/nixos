@@ -50,6 +50,19 @@
   fonts.fontDir.enable = true;
 
   # ============================================================
+  # MONTAGE DU DISQUE VMS
+  # ============================================================
+
+  fileSystems."/mnt/VMs" = {
+    device = "/dev/disk/by-label/VMs";
+    fsType = "ext4";
+    options = [
+      "defaults"
+      "nofail"
+    ];
+  };
+
+  # ============================================================
   # NETTOYAGE DES GENERATIONS
   # ============================================================
 
