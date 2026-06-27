@@ -6,6 +6,7 @@
     qbittorrent
     vivaldi
     vivaldi-ffmpeg-codecs
+    brave
     vlc
     libdvdcss
     protonplus
@@ -18,6 +19,8 @@
     faugus-launcher
     stow
     proton-vpn
+    shipwright
+    azahar
     # Polices
     nerd-fonts.fira-code
     nerd-fonts.caskaydia-cove
