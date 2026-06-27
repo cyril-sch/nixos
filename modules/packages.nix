@@ -20,7 +20,15 @@
     stow
     proton-vpn
     shipwright
-    azahar
+    # Azahar avec XWayland forcé (fix NVIDIA + Wayland)
+    (pkgs.symlinkJoin {
+      name = "azahar-wrapped";
+      paths = [ pkgs.azahar ];
+      nativeBuildInputs = [ pkgs.makeWrapper ];
+      postBuild = ''
+        wrapProgram $out/bin/azahar --set QT_QPA_PLATFORM xcb
+      '';
+    })
     # Polices
     nerd-fonts.fira-code
     nerd-fonts.caskaydia-cove
