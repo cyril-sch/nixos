@@ -12,7 +12,10 @@
     package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
 
-  hardware.graphics.enable = true;
+  hardware.graphics = {
+    enable = true;
+    enable32Bit = true; # important pour les émulateurs
+  };
 
   # Évite les conflits avec les drivers open-source
   boot.blacklistedKernelModules = [
