@@ -4,12 +4,11 @@
   services.xserver = {
     enable = true;
     xkb = {
-      layout  = "fr";
+      layout = "fr";
       variant = "";
     };
-    videoDrivers = [ "nvidia" ];
   };
 
-  services.displayManager.sddm.enable    = true;
+  services.displayManager.sddm.enable = true;
   services.desktopManager.plasma6.enable = true;
 }
