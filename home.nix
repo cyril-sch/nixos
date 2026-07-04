@@ -74,6 +74,8 @@
 
   home.enableNixpkgsReleaseCheck = false;
 
+  home.sessionPath = [ "$HOME/.local/bin" ];
+
   # Ne pas modifier — correspond à la version de Home Manager utilisée
   home.stateVersion = "26.05";
 }
