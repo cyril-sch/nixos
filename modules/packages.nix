@@ -20,6 +20,9 @@
     stow
     proton-vpn
     shipwright
+    zenity
+    unzip
+    p7zip
     # Polices
     nerd-fonts.fira-code
     nerd-fonts.caskaydia-cove
