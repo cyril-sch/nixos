@@ -4,8 +4,8 @@
   environment.systemPackages = with pkgs; [
     kdePackages.kate
     qbittorrent
-    #vivaldi
-    #vivaldi-ffmpeg-codecs
+    vivaldi
+    vivaldi-ffmpeg-codecs
     brave
     vlc
     libdvdcss
