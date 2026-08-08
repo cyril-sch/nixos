@@ -23,6 +23,7 @@
     zenity
     unzip
     p7zip
+    capacities
     # Polices
     nerd-fonts.fira-code
     nerd-fonts.caskaydia-cove
