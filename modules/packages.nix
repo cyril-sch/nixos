@@ -24,7 +24,6 @@
     unzip
     p7zip
     obsidian
-    capacities
     # Polices
     nerd-fonts.fira-code
     nerd-fonts.caskaydia-cove
