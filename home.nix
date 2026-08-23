@@ -68,6 +68,8 @@
   home.shellAliases = {
     rebuild = "sudo nixos-rebuild switch --flake ~/nixos#QUASAR";
     rebuild-update = "sudo nix flake update --flake ~/nixos && sudo nixos-rebuild switch --flake ~/nixos#QUASAR";
+    clean = "sudo nix-collect-garbage -d && sudo nixos-rebuild boot --flake ~/nixos#QUASAR";
+    ruc = "sudo nix flake update --flake ~/nixos && sudo nixos-rebuild switch --flake ~/nixos#QUASAR && sudo nix-env -p /nix/var/nix/profiles/system --delete-generations +3 && sudo nix-collect-garbage -d && sudo nixos-rebuild boot --flake ~/nixos#QUASAR";
   };
 
   # ============================================================
