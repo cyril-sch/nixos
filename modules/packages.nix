@@ -4,7 +4,6 @@
   environment.systemPackages = with pkgs; [
     kdePackages.kate
     qbittorrent
-    brave
     vlc
     libdvdcss
     protonplus
