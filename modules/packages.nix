@@ -4,6 +4,8 @@
   environment.systemPackages = with pkgs; [
     kdePackages.kate
     qbittorrent
+    vivaldi
+    vivaldi-ffmpeg-codecs
     vlc
     libdvdcss
     protonplus
@@ -21,6 +23,7 @@
     unzip
     p7zip
     obsidian
+    xivlauncher
     # Polices
     nerd-fonts.fira-code
     nerd-fonts.caskaydia-cove
