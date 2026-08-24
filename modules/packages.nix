@@ -4,8 +4,6 @@
   environment.systemPackages = with pkgs; [
     kdePackages.kate
     qbittorrent
-    vivaldi
-    vivaldi-ffmpeg-codecs
     vlc
     libdvdcss
     protonplus
