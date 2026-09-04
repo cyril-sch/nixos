@@ -21,8 +21,6 @@
     unzip
     p7zip
     obsidian
-    vivaldi
-    vivaldi-ffmpeg-codecs
     xivlauncher
     # Polices
     nerd-fonts.fira-code
