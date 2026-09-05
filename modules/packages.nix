@@ -22,6 +22,8 @@
     p7zip
     obsidian
     xivlauncher
+    vivaldi
+    vivaldi-ffmpeg-codecs
     # Polices
     nerd-fonts.fira-code
     nerd-fonts.caskaydia-cove
