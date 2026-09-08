@@ -21,7 +21,6 @@
     unzip
     p7zip
     obsidian
-    xivlauncher
     # Polices
     nerd-fonts.fira-code
     nerd-fonts.caskaydia-cove
