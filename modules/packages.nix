@@ -21,7 +21,7 @@
     unzip
     p7zip
     obsidian
-    xivlauncher
+    librewolf-bin
     # Polices
     nerd-fonts.fira-code
     nerd-fonts.caskaydia-cove
@@ -72,6 +72,33 @@
 
   programs.virt-manager.enable = true;
 
-  programs.nix-ld.enable = true;
+  programs.nix-ld = {
+    enable = true;
+    libraries = with pkgs; [
+      icu
+      expat
+      libffi
+      zlib
+      openssl
+      bzip2
+      xz
+      ncurses
+      readline
+      sqlite
+      freetype
+      gnutls
+    ];
+  };
+
+  # Nécessaire pour bwrap/pressure-vessel (Steam Linux Runtime) : ces outils
+  # s'attendent à trouver /bin/true dans un FHS classique, absent sur NixOS.
+  systemd.tmpfiles.rules = [
+    "L+ /bin/true - - - - ${pkgs.coreutils}/bin/true"
+  ];
+
+  system.activationScripts.ldconfigCache = ''
+    mkdir -p /var/cache/ldconfig
+    ${pkgs.glibc.bin}/sbin/ldconfig -C /var/cache/ldconfig/ld.so.cache
+  '';
 
 }
